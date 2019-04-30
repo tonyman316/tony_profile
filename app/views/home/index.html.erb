@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tony Man's Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/home.scss">
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
+  <body>
+
+    <div class="main-nav">
+        <ul class="nav">
+          <li class="name">Tony Man</li>
+          <li><a data-scroll href="#" class="nav-item">Home</a></li>
+          <li><a data-scroll href="#about" class="nav-item">About Me</a></li>
+          <li><a data-scroll href="#projects" class="nav-item">Projects</a></li>
+          <li><a data-scroll href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+    </div>
+
+    <header>
+      <img src="/assets/me.png" alt="Tony Man" class="profile-image">
+      <p class="tag location">I make iOS apps using Swift.
+        <br />I also make web apps using Ruby on Rails framework.
+      </p>
+    </header>
+
+    <section id="about">
+    <main class="flex">
+      <div class="card">
+        <h2>About Me</h2>
+        <p>I recently graduated from UC Santa Cruz with a B.S Computer Science degree.
+          I’m currently looking for a full-time position as a software engineering.
+          The area I’m interested in is web and mobile applications.
+        </p>
+        <p>
+          I have built a website <a data-scroll href="#projects">(Job-Fair-Connect)</a> by myself in Python using Web2py framework.
+          The frontend uses HTML and CSS. The backend uses SQLite, a default database provide by Web2py.
+          Company and students can use the website to connect and set up an interview appointment in a job fair event.
+        </p>
+        <p>
+          Another website <a data-scroll href="#projects">(Gigs)</a> is done in a group using Ruby on Rails framework.
+          The frontend is done in bootstraps and the backend is built with Postgresql.
+          The website provides a platform to find gigs like short term jobs to make some quick bucks.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Experience</h2>
+        <p>
+          <b>Freelance Mobile App Developer (8/2017-present)</b>
+          <br />I help clients to implement features on iOS app base on their needs.
+        </p>
+        <p>
+          <b>TA for CS and CE classes (9/2018-4/2019)</b>
+          <br />I was a TA in UC Santa Cruz for two quarters.
+          I made python scripts to grade students’ homework and exams.
+        </p>
+        <p>
+          <b>TA in iOS Development class, De Anza College (Winter 2017)</b>
+          <br />Answer questions from students and guide them in their group projects.
+        </p>
+      </div>
+    </main>
+
+    <main class="flex">
+      <div class="card">
+        <h2>Languages & Technologies</h2>
+        <ul class="languages">
+          <li>Swift</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>C/C++</li>
+          <li>PostgreSQL</li>
+          <li>Ruby</li>
+        </ul>
+
+        <ul class="technologies">
+          <li>Git</li>
+          <li>Cocoapods</li>
+          <li>REST APIs</li>
+          <li>JDBC</li>
+          <li>Web2py</li>
+          <li>Rails</li>
+          <li>Bootstrap</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Coursework</h2>
+        <ul class="courses">
+          <li>iOS Development</li>
+          <li>Advanced Java</li>
+          <li>Web Application</li>
+          <li>Analysis of Algorithms</li>
+          <li>Advanced Programming</li>
+          <li>Data Abstraction and Structures</li>
+          <li>Operating System</li>
+          <li>Computer Architecture</li>
+          <li>Software Engineering</li>
+          <li>Artificial Intelligent</li>
+          <li>Database System</li>
+        </ul>
+      </div>
+    </main>
+    </section>
+
+    <section id="projects">
+      <div class="proj_div">
+        <h2>Job-Fair-Connect</h2>
+        <iframe width="1000" height="500" src="http://www.youtube.com/embed/x4iOehlvs_8" frameborder="0"></iframe><br />
+        <a href="http://tonyman316.pythonanywhere.com/init/default/index" target="_blank">Job-Fair-Connect Project URL</a>
+      </div>
+      <br />
+      <div class="proj_div">
+        <h2>Gigs</h2>
+        <iframe width="1000" height="500" src="http://www.youtube.com/embed/tFSpz62bMgI" frameborder="0"></iframe><br />
+        <a href="https://gigsapp-115.herokuapp.com" target="_blank">Gigs Project URL</a>
+      </div>
+    </section>
+
+    <section id="contact">
+    <footer>
+      <ul>
+        <li><a href="http://www.linkedin.com/in/tonyman316" target="_blank" class="social linkedin">LinkedIn</a></li>
+        <li><a href="https://github.com/tonyman316" target="_blank" class="social github">Github</a></li>
+        <li><a href="mailto:tonyman316@gmail.com" class="social email">Tony Man</a></li>
+      </ul>
+      <p class="copyright">Copyright 2019, Tony Man</p>
+    </footer>
+    </section>
+
+  </body>
+  </html>
+
+<script>
+  // All animations will take exactly 500ms
+  var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+});
+</script>
+<!-- Get minor updates and patch fixes within a major version -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
