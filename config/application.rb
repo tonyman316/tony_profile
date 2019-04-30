@@ -14,9 +14,6 @@ module TonyProfile
     config.action_dispatch.default_headers = {
       'X-Frame-Options' => 'ALLOWALL'
     }
-    config.action_dispatch.default_headers = {
-      'X-XSS-Protection' => '0;'
-    }
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
